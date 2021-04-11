@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <vs-navbar type="gradient" v-model="activeItem" class="nabarx">
+      <div slot="title">
+        <vs-navbar-title>
+          Typing Test
+        </vs-navbar-title>
+      </div>
+
+      <vs-navbar-item index="0">
+        <a href="#">Home</a>
+      </vs-navbar-item>
+      <vs-navbar-item index="1">
+        <a href="#">News</a>
+      </vs-navbar-item>
+      <vs-navbar-item index="2">
+        <a href="#">Update</a>
+      </vs-navbar-item>
+    </vs-navbar>
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
